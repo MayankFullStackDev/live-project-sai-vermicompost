@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Grid with Modal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    .product-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      height: 100%;
+    }
+ 
+    .product-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+    }
+ 
+    .product-image {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+ 
+    .product-body {
+      padding: 15px;
+    }
+ 
+    .star-rating i {
+      color: gold;
+    }
+ 
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+ 
+    .btn-buy {
+      background: #2c3e50;
+      color: white;
+      border: none;
+    }
+ 
+    .btn-buy:hover {
+      background: #1a242f;
+    }
+  </style>
+</head>
+<body>
+ 
+<div class="container py-5">
+  <div class="row g-4">
+ 
+    <!-- PRODUCT 1 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card">
+        <img src="https://images.unsplash.com/photo-1606813908980-b47ef2fdf5fd" class="product-image" alt="Headphones">
+        <div class="product-body">
+          <h5 class="card-title">Wireless Headphones</h5>
+          <div class="star-rating mb-2">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+          </div>
+          <p class="price">$99.99</p>
+          <button class="btn btn-buy w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal1">Quick View</button>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- PRODUCT 2 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card">
+        <img src="https://images.unsplash.com/photo-1600180758890-d5b3aee7c908" class="product-image" alt="Shoes">
+        <div class="product-body">
+          <h5 class="card-title">Running Shoes</h5>
+          <div class="star-rating mb-2">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+          </div>
+          <p class="price">$59.99</p>
+          <button class="btn btn-buy w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal2">Quick View</button>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- PRODUCT 3 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796" class="product-image" alt="Watch">
+        <div class="product-body">
+          <h5 class="card-title">Luxury Watch</h5>
+          <div class="star-rating mb-2">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="price">$199.99</p>
+          <button class="btn btn-buy w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal3">Quick View</button>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- PRODUCT 4 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card">
+        <img src="https://images.unsplash.com/photo-1580910051071-3878ff6d2622" class="product-image" alt="Camera">
+        <div class="product-body">
+          <h5 class="card-title">Digital Camera</h5>
+          <div class="star-rating mb-2">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+          </div>
+          <p class="price">$249.99</p>
+          <button class="btn btn-buy w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modal4">Quick View</button>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- MODALS FOR PRODUCTS -->
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="https://images.unsplash.com/photo-1606813908980-b47ef2fdf5fd" class="img-fluid" alt="Headphones">
+      <div class="modal-body">
+        <h5>Wireless Headphones</h5>
+        <p>Experience high-quality sound with noise cancellation and deep bass.</p>
+        <p class="price">$99.99</p>
+        <button class="btn btn-buy w-100">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="https://images.unsplash.com/photo-1600180758890-d5b3aee7c908" class="img-fluid" alt="Shoes">
+      <div class="modal-body">
+        <h5>Running Shoes</h5>
+        <p>Perfect grip and lightweight material for your daily workout and jogs.</p>
+        <p class="price">$59.99</p>
+        <button class="btn btn-buy w-100">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796" class="img-fluid" alt="Watch">
+      <div class="modal-body">
+        <h5>Luxury Watch</h5>
+        <p>Elegant timepiece with premium leather strap and water-resistant design.</p>
+        <p class="price">$199.99</p>
+        <button class="btn btn-buy w-100">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="https://images.unsplash.com/photo-1580910051071-3878ff6d2622" class="img-fluid" alt="Camera">
+      <div class="modal-body">
+        <h5>Digital Camera</h5>
+        <p>Capture memories with stunning clarity using this HD digital camera.</p>
+        <p class="price">$249.99</p>
+        <button class="btn btn-buy w-100">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

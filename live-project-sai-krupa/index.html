@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Krupa Vermicompost</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            padding-top: 80px;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .navbar {
+            background-color: #A3DC9A;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section {
+            min-height: 550px;
+        }
+
+        .hero-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: #ffffff;
+            /* You can change this to your theme color */
+        }
+
+        /* Optional: Fancy underline animation */
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 0;
+            height: 2px;
+            background-color: #28a745;
+            transition: width 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+
+        .about-cards .card {
+            height: 100%;
+        }
+
+        .benifit-img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+
+        .card-product img {
+            height: 200px;
+            object-fit: contain;
+        }
+
+        footer {
+            background-color: #A3DC9A;
+            text-align: center;
+            padding: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./image-sai-krupa-vermicompost/logo-sai-krupa.png" height="50" class="me-2" />
+                <strong>Sai Kripa Vermicompost</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#aboutus" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#benefits" class="nav-link">Benefits</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#gallary" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold">Sai Kripa Vermicompost & Earthworms</h1>
+                <p class="lead">We manufacture high-quality vermicompost and earthworms for sustainable farming at
+                    affordable prices.</p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-success btn-lg">Order Now</button>
+                    <button class="btn btn-outline-secondary btn-lg">Products</button>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="./image-sai-krupa-vermicompost/herosection-img-removebg-preview.png" alt="Hero Image"
+                    class="hero-img img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="bg-light py-5 text-center">
+        <div class="container" id="aboutus">
+            <h2>About EarthWorm Organics</h2>
+            <p class="lead">Pioneering sustainable agriculture through the ancient art of vermicomposting.</p>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card text-bg-dark h-100">
+                        <div class="card-header">🎯 Our Mission</div>
+                        <div class="card-body">
+                            <p>To revolutionize agriculture with premium organic compost that boosts soil health and
+                                crop yield.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-bg-dark h-100">
+                        <div class="card-header">⚙️ Our Process</div>
+                        <div class="card-body">
+                            <p>Using selected earthworms to convert organic waste into rich, natural fertilizer in a
+                                controlled setup.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-bg-dark h-100">
+                        <div class="card-header">🌱 Benefits</div>
+                        <div class="card-body">
+                            <p>Improves soil, enhances moisture retention, boosts yield, and it's 100% organic and
+                                chemical-free.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5 bg-light text-center">
+        <div class="container" id="benefits">
+            <h2 class="mb-4">Why Choose Vermicompost?</h2>
+
+            <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+                <!-- Indicators (dots) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <img src="./image-sai-krupa-vermicompost/benifits-img.png"
+                                    class="img-fluid rounded shadow" alt="Environmental Impact">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>🌍 Environmental Impact</h4>
+                                <p>Reduces landfill waste, lowers emissions, and supports a circular economy.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <img src="./image-sai-krupa-vermicompost/benifits-img.png"
+                                    class="img-fluid rounded shadow" alt="Soil Health">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>🌾 Soil Health</h4>
+                                <p>Boosts soil structure, water retention, and microbial activity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <img src="./image-sai-krupa-vermicompost/benifits-img.png"
+                                    class="img-fluid rounded shadow" alt="Crop Yield">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>📈 Crop Yield</h4>
+                                <p>Improves productivity and disease resistance by 20–40%.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <img src="./image-sai-krupa-vermicompost/benifits-img.png"
+                                    class="img-fluid rounded shadow" alt="Cost Effective">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>💰 Cost Effective</h4>
+                                <p>Cuts chemical fertilizer costs and enhances long-term soil fertility.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"
+                        style="background-color: black; border-radius: 50%; width: 40px; height: 40px;"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#benefitsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"
+                        style="background-color: black; border-radius: 50%; width: 40px; height: 40px;"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Products Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center" id="product">
+            <h2>Our Products</h2>
+            <p class="lead">Premium vermicompost in various sizes for all your gardening needs</p>
+            <div class="row mt-4 g-4 justify-content-center">
+                <!-- Cards -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./image-sai-krupa-vermicompost/bag.png" class="card-img-top" alt="5kg Bag">
+                        <div class="card-body">
+                            <h5>Home Garden Pack</h5>
+                            <p>✓ Nutrient-rich ✓ Easy to use ✓ Perfect for pots ✓ Odor-free</p>
+                            <button class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./image-sai-krupa-vermicompost/bag.png" class="card-img-top"
+                            alt="25kg Bag">
+                        <div class="card-body">
+                            <h5>Farm Essential</h5>
+                            <p>✓ Bulk quantity ✓ Cost effective ✓ High yield ✓ Long-lasting</p>
+                            <button class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./image-sai-krupa-vermicompost/bag.png" class="card-img-top" alt="Bulk">
+                        <div class="card-body">
+                            <h5>Commercial Grade</h5>
+                            <p>✓ Custom orders ✓ Direct delivery ✓ Tech support ✓ Best value</p>
+                            <button class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 text-center">
+        <div class="container" id="gallary">
+            <h2>Our Process Gallery</h2>
+           <div class="row g-3 mt-3">
+
+               
+                <div class="col-6 col-md-3">
+                    <img src="./image-sai-krupa-vermicompost/sai-six.webp" class="img-fluid rounded shadow"
+                        alt="Gallery 1" />
+                </div>
+                 <div class="col-6 col-md-3">
+                    <img src="./image-sai-krupa-vermicompost/sai-one.webp" class="img-fluid rounded shadow"
+                        alt="Gallery 3" />
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="./image-sai-krupa-vermicompost/sai-seven.webp" class="img-fluid rounded shadow"
+                        alt="Gallery 4" />
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="./image-sai-krupa-vermicompost/sai-three.webp" class="img-fluid rounded shadow"
+                        alt="Gallery 2" />
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-white border rounded">
+                        <h4 class="text-danger">Contact Information</h4>
+                        <p><strong>🏪 Shop Name:</strong> Sai Kripa Vermicompost</p>
+                        <p><strong>📍 Address:</strong> 94, Behind Hanuman Temple, Bori Village, Katol, Maharashtra
+                            441302</p>
+                        <p><strong>📞 Phone:</strong> <a href="tel:99216724560">+91 99216724560</a></p>
+                        <p><strong>📧 Email:</strong> <a
+                                href="mailto:info@vinaydawre@gmail.com">info@vinaydawre@gmail.com</a></p>
+                        <p><strong>🕒 Timings:</strong> Mon – Sat: 9:00 AM – 8:00 PM, Sunday Closed</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="450"
+                        style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Sai Kripa Vermicompost | Built with ❤️
+    </footer>
+
+</body>
+
+</html>
